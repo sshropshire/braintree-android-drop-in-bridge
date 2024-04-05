@@ -6,20 +6,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DropIn Bridge Demo</title>
+    <style>
+        .launch-button {
+            min-height: 50px;
+            max-width: 600px;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
     <h1>DropIn Bridge Demo</h1>
+    <button id="launch-button" class="launch-button">Launch DropIn</button>
     <script>
         const { dropInBridge } = window;
         if (dropInBridge) {
             dropInBridge.bootstrap();
-            setTimeout(function () {
-                window.startDropIn({ arg0: 'hello', arg1: 'world' });
-            }, 10);
         } else {
             console.log("DropIn Bridge not found.");
         }
+
+        const launchButton = document.getElementById('launch-button');
+        launchButton.addEventListener('click', function (e) {
+            window.startDropIn({ arg0: 'hello', arg1: 'world' });
+        });
     </script>
 </body>
 
