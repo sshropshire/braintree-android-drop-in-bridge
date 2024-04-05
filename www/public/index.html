@@ -10,6 +10,15 @@
 
 <body>
     <h1>DropIn Bridge Demo</h1>
+    <script>
+        const { dropInBridge } = window;
+        if (dropInBridge) {
+            dropInBridge.bootstrap();
+            window.startDropIn({ arg0: 'hello', arg1: 'world' });
+        } else {
+            console.log("DropIn Bridge not found.");
+        }
+    </script>
 </body>
 
 </html>

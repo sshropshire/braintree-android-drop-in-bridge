@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "Braintree Android DropIn Bridge Demo",
   "scripts": {
-    "deploy": "gh-pages -d public"
+    "deploy": "gh-pages -d public",
+    "local": "http-server public"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1",
+    "http-server": "^14.1.1"
   }
 }
