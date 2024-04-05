@@ -1,3 +1,4 @@
+# android
 .gradle
 /local.properties
 /.idea
@@ -6,3 +7,7 @@ Gemfile.lock
 .bundle
 *.iml
 build
+
+# node.js
+node_modules/
+

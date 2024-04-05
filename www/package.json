@@ -1,0 +1,13 @@
+{
+  "name": "braintree-android-drop-in-bridge-demo",
+  "version": "1.0.0",
+  "description": "Braintree Android DropIn Bridge Demo",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
